@@ -35,7 +35,7 @@ export default async function handler(req, res) {
     
     // Usiamo gemini-1.5-flash: è il più rapido, economico e perfetto per il text-processing
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-1.5-flash',
+  model: 'gemini-3-pro',
       // Passiamo il prompt di sistema tramite le systemInstruction (best practice)
       systemInstruction: "Sei un assistente AI per l'organizzazione personale. Riceverai un testo disordinato o degli appunti. Devi restituire: 1. Un riassunto esecutivo in 3 bullet point. 2. Massimo 5 tag rilevanti. 3. Una proposta di titolo per la nota. Formatta la risposta in Markdown pulito."
     });
